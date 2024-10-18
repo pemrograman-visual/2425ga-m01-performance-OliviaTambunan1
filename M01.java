@@ -4,7 +4,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class M01 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -52,6 +52,11 @@ public class M01 {
             performa = kredit1 * nilaiangka;
             System.out.println(toFixed(performa,1));
             kredit = input.nextLine();
+            if (kredit.equals("---")) {
+                kredit = kredit;
+            } else {
+                kredit1 = Integer.parseInt(kredit);
+            }
             nilaihuruf = input.nextLine();
         }
     }
