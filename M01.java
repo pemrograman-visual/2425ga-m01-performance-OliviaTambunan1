@@ -10,13 +10,13 @@ public class M01 {
     public static void main(String[] args) {
         String nilaihuruf, kredit;
         double performa, nilaiangka;
-        double kredit1;
+        int kredit1;
 
         kredit = input.nextLine();
         if (kredit.equals("---")) {
             kredit = kredit;
         } else {
-            kredit1 = Integer.parseDouble(kredit);
+            kredit1 = Integer.parseInt(kredit);
         }
         nilaihuruf = input.nextLine();
         while (!nilaihuruf.equals("---")) {
@@ -55,7 +55,7 @@ public class M01 {
             if (kredit.equals("---")) {
                 kredit = kredit;
             } else {
-                kredit1 = Integer.parseDouble(kredit);
+                kredit1 = Integer.parseInt(kredit);
             }
             nilaihuruf = input.nextLine();
         }
